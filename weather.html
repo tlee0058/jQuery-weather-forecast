@@ -18,11 +18,11 @@
                             // for(var i = 0; i < res['weather'][0].length; i++);
                             // html_str+="<h3>Temperature:" + res['weather'][0].i +"</h3>";
                             for(var group in res.main){
-                                for(i = 0; i < res.main[group].length; i++){
-                                    html_str+="<h4>"+ res.main[group][i] + "</h4>";
+                                
+                                    html_str+="<h4>"+ group + res.main[group] + "</h4>";
 
                                 }
-                            }
+                            
 
                             $('#display').html(html_str);
                                         }, "json");
